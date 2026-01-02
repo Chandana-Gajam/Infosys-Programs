@@ -6,7 +6,7 @@ digit = 1
 
 O/P: 321
 
-#Programs#
+# Program #
 
 n = str(input())
 d = str(input())
@@ -18,3 +18,4 @@ for i in range(len(n)):
         ans.append(int(t))
 
 print(max(ans))        
+
