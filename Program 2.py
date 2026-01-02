@@ -1,3 +1,17 @@
+You are given an integer n. A 0-indexed integer array nums of length n+1 is generated following the rules:
+
+1. nums[0]=0
+
+2. nums[1]=1
+
+3. nums[2*i] = nums[i], when 2<= 2*i <= n
+
+4. nums[2*i] = nums[i] + nums[i+1], when 2<= 2*i +1 <= n
+
+Return the maximum integer in the array nums.
+
+# Program #
+
 n = 7
 arr = [0] * (n+1)
 arr[0] = 0
@@ -7,4 +21,5 @@ for i in range(1,(n//2)+1):
     arr[i*2] = arr[i]
     arr[(i*2)+1] = arr[i] + arr[i+1]
 print(arr)
+
 print(max(arr))           
